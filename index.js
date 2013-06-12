@@ -6,7 +6,7 @@ function addressFormat(addressId, container, options) {
     if (el === undefined || el === null) {
         el = document;
     }
-    if (options === undefined || el === null) {
+    if (options === undefined || options === null) {
         options = {};
     }
     options.url = options.url || '../address/';
