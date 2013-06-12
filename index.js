@@ -3,10 +3,10 @@ var xhr = require('xhr');
 
 function addressFormat(addressId, container, options) {
     var el = container;
-    if (el === undefined || el === null) {
+    if (el == null) {
         el = document;
     }
-    if (options === undefined || options === null) {
+    if (options == null) {
         options = {};
     }
     options.url = options.url || '../address/';
