@@ -10,8 +10,7 @@ function addressFormat(addressId, container, options) {
         options = { };
     }
     options.url = options.url || '../address/';
-    options.cssPrefix = options.cssPrefix || 'qas';
-    
+        
     xhr({
         url: options.url + addressId,
         headers: {
