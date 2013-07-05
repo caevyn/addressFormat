@@ -27,11 +27,13 @@ function addressFormat(addressId, container, options) {
     function onSuccess(req) {
         var result = JSON.parse(req.responseText);
 
-        updateField('address', result.streetAddress);
+        updateField('line1', result.addressLine1);
+        updateField('line2', result.addressLine2);
         updateField('locality', result.locality);
         updateField('country', result.country);
         updateField('postcode', result.postcode);
         updateField('state', result.state);
+        updateField('dpid', result.dpid);
     },
     function onError(err) {
         console.log('There was an error getting the address details: ' + err.message);
