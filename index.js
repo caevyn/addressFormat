@@ -33,7 +33,6 @@ function addressFormat(addressId, container, options) {
         updateField('country', result.country);
         updateField('postcode', result.postcode);
         updateField('state', result.state);
-        updateField('dpid', result.dpid);
     },
     function onError(err) {
         console.log('There was an error getting the address details: ' + err.message);
