@@ -2,7 +2,7 @@
   "name": "addressFormat",
   "repo": "caevyn/addressFormat",
   "description": "Calls the address endpoint and gets back a formatted address and fills in fields. An addressId from a search will be required.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "qas"
   ],

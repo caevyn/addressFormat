@@ -1,16 +1,12 @@
 ﻿'use strict';
 var xhr = require('xhr');
 
-function addressFormat(addressId, container, options) {
+function addressFormat(url, container) {
     var el = container;
     if (el == null) {
         el = document;
     }
-    if (options == null) {
-        options = {};
-    }
-    options.url = options.url || '../address/';
-
+    
     function updateField(field, value) {
         var input = el.querySelector("[data-qas='" + field + "']");
         if (input !== null) {
@@ -19,7 +15,7 @@ function addressFormat(addressId, container, options) {
     }
 
     xhr({
-        url: options.url + addressId,
+        url: url,
         headers: {
             'Accept': 'application/json'
         }
